@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Sync</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="super_container">
+      <aside>
+        <nav class="sidebar">
+          <img src="" alt="Auth Sync" />
+          <ul style="list-style: none">
+            <li><span></span>Dashboard</li>
+            <li><span></span>TOTP</li>
+            <li><span></span>Password</li>
+            <li><span></span>Vault</li>
+            <li><span></span>Trash</li>
+            <li><span></span>Settings</li>
+          </ul>
+        </nav>
+        <div></div>
+      </aside>
+
+      <main>
+        <header>
+          <div class="dash">
+            <h2>Dashboard</h2>
+            <p>Welcome Aayush!</p>
+          </div>
+          <div class="second-section">
+            <div class="icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="buttons">
+              <button id="select">
+                <i class="fa-solid fa-square-check"></i>
+                <span><p>Select</p></span>
+              </button>
+              <button id="add">
+                <p>+ Add</p>
+              </button>
+            </div>
+          </div>
+        </header>
+        <section id="TOTP">
+          <h2>TOTP</h2>
+          <div class="boxes">
+            <div class="Google">
+              <div class="totp_top">
+                <div class="top_data">
+                  <p>Google</p>
+                  <p>example123@gmail.com</p>
+                </div>
+                <div class="top_icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="totp_buttom">
+                <p>123 234</p>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="Google">
+              <div class="totp_top">
+                <div class="top_data">
+                  <p>Facebook</p>
+                  <p>facebook123@gmail.com</p>
+                  <span
+                    style="
+                      background-color: #fff3d9;
+                      padding: 5px 8px;
+                      font-size: 10px;
+                      border-radius: 10px;
+                      color: #c0ad8b;
+                    "
+                    >Shared by John</span
+                  >
+                </div>
+                <div class="top_icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="totp_buttom">
+                <p>132 546</p>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="Google">
+              <div class="totp_top">
+                <div class="top_data">
+                  <p>Instagram</p>
+                  <p>insta@gmail.com</p>
+                </div>
+                <div class="top_icon">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="totp_buttom">
+                <p>123 234</p>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Password">
+          <div class="left-side">
+            <h2>Password</h2>
+            <table>
+              <tr>
+                <th><input type="checkbox" /></th>
+                <th>Items</th>
+                <th>Owner</th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="items">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <div class="items_name">
+                      <p>Google</p>
+                      <p>user123@example.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>Me</p>
+                </td>
+                <td>
+                  <i class="fa-regular fa-copy"></i>
+                </td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="items">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div class="items_name">
+                      <p>Bank 12</p>
+                      <img
+                        src="https://static.thenounproject.com/png/circle-overlap-icon-4858502-512.png"
+                        alt="circle overlap icon"
+                        width="25"
+                        height="25"
+                        fetchpriority="high"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>James</p>
+                </td>
+                <td></td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="items">
+                    <img src="/Project 1/images/sketchbook.png" alt="book" />
+                    <div class="items_name">
+                      <p>Note title</p>
+                      <p>
+                        Write description about anything you want using this
+                        feature.
+                      </p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>Me</p>
+                </td>
+                <td>
+                  <i class="fa-regular fa-copy"></i>
+                </td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="items">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div class="items_name">
+                      <p>Bank 23</p>
+                      <i class="fa-solid fa-v"></i>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>James</p>
+                </td>
+                <td></td>
+                <td>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td>
+                  <div class="items">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <div class="items_name">
+                      <p>Facebook</p>
+                      <p>user123@example.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>Me</p>
+                </td>
+                <td>
+                  <i class="fa-regular fa-copy"></i>
+                </td>
+                <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+              </tr>
+            </table>
+          </div>
+          <div class="right-side">
+            <h2>Vault</h2>
+            <div class="vault_divs">
+              <div class="vault-card">
+                <div class="vault-header">
+                  <img
+                    src="https://i.imgur.com/kW1c5xs.jpg"
+                    alt="Family Icon"
+                  />
+                </div>
+                <div class="vault-info">
+                  <p class="vault-title">Family <span>(11)</span></p>
+                  <p class="vault-desc">Netflix, Amazon Prime, etc.</p>
+                  <span class="vault-shared">Shared by John</span>
+                </div>
+              </div>
+
+              <div class="vault-card">
+                <div class="vault-header">
+                  <img
+                    src="https://i.imgur.com/sONme3K.jpg"
+                    alt="Office Icon"
+                  />
+                </div>
+                <div class="vault-info">
+                  <p class="vault-title">Office <span>(21)</span></p>
+                  <p class="vault-desc">Mobbin, Envato, ChatGPT...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

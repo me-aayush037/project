@@ -1,0 +1,289 @@
+* {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #f9f9fb;
+}
+.super_container {
+  display: flex;
+  height: 97vh;
+  overflow: hidden;
+}
+
+aside {
+  padding-top: 25px;
+  padding-right: 25px;
+  width: 15%;
+  border-right: 4px solid #ededf1;
+}
+
+.sidebar img {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  color: #535357;
+  font-weight: bold;
+}
+
+.sidebar ul li:hover {
+  background-color: #eff0f4;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+main {
+  width: 85%;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 25px;
+  padding: 20px 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-weight: bold;
+  color: #161615;
+}
+p {
+  color: #344343;
+  font-weight: 500;
+}
+.second-section {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+/* Search Icon */
+.second-section .icon i {
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.second-section .icon i:hover {
+  color: #111;
+}
+
+/* Buttons Container */
+.second-section .buttons {
+  display: flex;
+  gap: 18px;
+}
+
+/* Select Button */
+#select {
+  color: #333;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: 1px solid #344343;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+}
+
+/* Add Button */
+#add  {
+  background-color: #1333a0;
+  border-radius: 30px;
+  padding: 5px 25px;
+  border: none;
+ 
+}
+#add p{
+     color: white;
+}
+
+#add p,
+#select p {
+  margin: 0;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.Google {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 16px 20px;
+  width: 100%;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.Google:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.totp_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.top_data p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.top_data p:last-child {
+  font-size: 13px;
+  color: #666;
+  margin: 2px 0 0 0;
+}
+
+.top_icon i {
+  color: #888;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.totp_buttom p {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #333;
+}
+
+.totp_buttom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+/* Container Layout */
+.Password {
+  display: flex;
+  padding: 20px;
+  background-color: #f7f7fb;
+  gap: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Left Side - Table */
+.left-side {
+  flex: 3;
+  overflow-y: auto;
+}
+
+/* Right Side - Vault */
+.right-side {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #f2f2f7;
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+}
+
+tr:not(:first-child):hover {
+  background-color: #f9f9fc;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+table th:nth-child(4),
+table th:nth-child(5) {
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
+}
+
+.items_name p:first-child {
+  font-weight: 600;
+  margin: 0;
+}
+
+.items_name p:last-child {
+  color: #888;
+  font-size: 13px;
+  margin: 2px 0 0 0;
+}
+
+td i {
+  margin-right: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Vault Title */
+.right-side p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Vault Items Container */
+.vault_divs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vault-card {
+  background-color: #fff;
+  display: flex;
+  border-radius: 12px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vault-shared {
+  background-color: #fff4da;
+  color: #a48e60;
+  padding: 5px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+}
